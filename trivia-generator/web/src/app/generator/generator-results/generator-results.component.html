@@ -1,0 +1,9 @@
+<div>
+  <div>
+    <span>Category</span><span class="pull-right"># of questions</span>
+  </div>
+  <div *ngFor="let questionBatch of batch; let i = index;">
+    <div class="btn btn-theme">{{questionBatch.batchCategory}}</div>
+    <span class="badge badge-theme pull-right" style="margin-top: 10px;">{{questionBatch.numberOfQuestions}}</span>
+  </div>
+</div>

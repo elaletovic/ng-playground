@@ -1,0 +1,33 @@
+<form #generatorForm="ngForm" (ngSubmit)="onSubmit(generatorForm)">
+  <div class="form-group">
+    <label for="numberOfQs">Number of Questions</label>
+    <input type="number" class="form-control" id="numberOfQs" name="numberOfQuestions" placeholder="Number of Questions" ngModel />
+  </div>
+  <div class="form-group">
+    <label for="categoryId">Select Category</label>
+    <select class="form-control" id="categoryId" name="category" ngModel>
+      <option *ngFor="let c of categories" [value]="c.value">{{c.description}}</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="difficultyId">Select Difficulty</label>
+    <select class="form-control" id="difficultyId" name="difficulty" ngModel>
+      <option *ngFor="let d of difficulties" [value]="d.value">{{d.description}}</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="typeId">Select Type</label>
+    <select class="form-control" id="typeId" name="type" ngModel>
+      <option *ngFor="let t of types" [value]="t.value">{{t.description}}</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="encodingId">Select Encoding</label>
+    <select class="form-control" id="encodingId" name="encoding" ngModel>
+      <option *ngFor="let e of encodings" [value]="e.value">{{e.description}}</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <button type="submit" class="btn btn-theme">Submit</button>
+  </div>
+</form>

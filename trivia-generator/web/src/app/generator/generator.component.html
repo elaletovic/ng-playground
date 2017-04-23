@@ -1,0 +1,25 @@
+<div class="container mtb">
+	 	<div class="row">
+	 	
+	 		<div class="col-lg-8">
+				 <div style="padding-bottom: 30px;">
+					 <h4>Please fill the required fields and click Submit to generate questions. Summary of generated questions will be presented in the Summary section.</h4>
+				 </div>
+        <generator-form [batch]="batchOfQuestions"></generator-form>
+		 		
+			</div><!--/col-lg-8 -->
+	 		
+	 		
+	 		<!-- SIDEBAR -->
+	 		<div class="col-lg-4">
+		 		<h4>Summary</h4>
+		 		<div class="hline"></div>
+		 			<generator-results [batch]="batchOfQuestions"></generator-results>
+		 			
+		 		<div class="spacing"></div>	 		
+		 		
+		 		
+		 		
+	 		</div>
+	 	</div><!--/row -->
+	 </div><!--/container -->
