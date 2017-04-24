@@ -1,8 +1,0 @@
-C:\Code\ng-playground\trivia-generator\api\bin\Debug\netcoreapp1.1\api.deps.json
-C:\Code\ng-playground\trivia-generator\api\bin\Debug\netcoreapp1.1\api.runtimeconfig.json
-C:\Code\ng-playground\trivia-generator\api\bin\Debug\netcoreapp1.1\api.runtimeconfig.dev.json
-C:\Code\ng-playground\trivia-generator\api\bin\Debug\netcoreapp1.1\api.dll
-C:\Code\ng-playground\trivia-generator\api\bin\Debug\netcoreapp1.1\api.pdb
-C:\Code\ng-playground\trivia-generator\api\obj\Debug\netcoreapp1.1\api.AssemblyInfo.cs
-C:\Code\ng-playground\trivia-generator\api\obj\Debug\netcoreapp1.1\api.dll
-C:\Code\ng-playground\trivia-generator\api\obj\Debug\netcoreapp1.1\api.pdb
