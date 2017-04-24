@@ -12,8 +12,4 @@ export class GeneratorResultsComponent {
 //input field
   @Input() batch: QuestionBatch[];
   constructor() { }
-
-  ngOnInit() {
-  }
-
 }
