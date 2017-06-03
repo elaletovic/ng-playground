@@ -67,10 +67,13 @@ Nope, we haven't forgot about unit tests. Currently, none of the unit tests pass
 
 Miscellaneous challenges regarding general architecture and design of this SPA.
 
--  Refactor the application to use a **state container** for storing data, like `Redux`, `ngrx/store` or `angular-redux/store`.
 
 
 ### Backend challenges ###
 
-//TODO
+- Lookup values (values that are populated in the drop down lists) should not be hard coded in the **GeneratorFormComponent** class. Instead, they should be moved to the web API site and loaded into the component from there.
+- Endpoints that return lookup value data should be protected and secured, so that they cannot be accessed outside our application.
+
+#### Save generated questions - new functionality ####
+- For the **GeneratedQuizComponent** functionality, generated questions need to be saved prior to them being displayed on the UI. This is needed because user may want to access the generated questions directly via `/path/to/quiz/with/generated/questions` so he can share his generated quiz with others. Persisting these questions in a permanent storage is optional, but the generated data should be available while the web API site is up and running.
 
