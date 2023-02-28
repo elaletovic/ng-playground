@@ -1,0 +1,15 @@
+name: 'Check for Vulnerabilities'
+
+on:
+  schedule:
+    - cron: '*/10 * * * *'
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: elaletovic/slacksnitch@main
+        with:
+          github_access_token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+          slack_access_token: ${{ secrets.SLACK_ACCESS_TOKEN }}
+          slack_channel: security-alerts
