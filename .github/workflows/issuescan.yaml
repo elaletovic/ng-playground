@@ -2,7 +2,7 @@ name: 'Check for Vulnerabilities'
 
 on:
   schedule:
-    - cron: '59 23 * * 0'
+    - cron: '*/10 * * * *'
 
 jobs:
   main:
@@ -13,3 +13,4 @@ jobs:
           github_access_token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
           slack_access_token: ${{ secrets.SLACK_ACCESS_TOKEN }}
           slack_channel: security-alerts
+          number_of_items: 5
