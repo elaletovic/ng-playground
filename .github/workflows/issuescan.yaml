@@ -13,4 +13,4 @@ jobs:
           github_access_token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
           slack_access_token: ${{ secrets.SLACK_ACCESS_TOKEN }}
           slack_channel: security-alerts
-          number_of_items: 5
+          number_of_records: 5
